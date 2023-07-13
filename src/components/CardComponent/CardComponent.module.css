@@ -1,0 +1,98 @@
+.card {
+    min-height: 440px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1.4rem 0.8rem 0.4rem rgba(0, 0, 0, 0.04);
+    font-family: var(--font);
+    gap: 1rem;
+    background-color: #101010;
+    color: #d0d0d0;
+    border: 1px solid #484848;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 400ms;
+    -webkit-animation-duration: 400ms;
+    margin-block-start: 4rem;
+    box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.imageOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 70%,
+        rgba(0, 0, 0, 1)
+    );
+}
+
+.info {
+    padding-block-start: 1rem;
+    padding-block-end: 2rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.name {
+    font-size: 1rem;
+    color: white;
+}
+
+.button {
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullDetails {
+    width: 100%;
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
